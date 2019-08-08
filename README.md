@@ -34,8 +34,9 @@
     - `FLV`:`http://127.0.0.1:7001/live/movie.flv`
     - `HLS`:`http://127.0.0.1:7002/live/movie.m3u8`
 
-5. obs 推流地址:rtmp://localhost:1935/live  appname:test
-   http-flv:http://127.0.0.1:7001/live/test.flv
+5.  - obs 推流地址:rtmp://localhost:1935/live  
+    - appname:test
+    - http-flv:http://127.0.0.1:7001/live/test.flv
    
 ### [和 flv.js 搭配使用](https://github.com/gwuhaolin/blog/issues/3)
 
