@@ -1,0 +1,10 @@
+# github.com/davecgh/go-spew v1.1.0
+github.com/davecgh/go-spew/spew
+# github.com/orcaman/concurrent-map v0.0.0-20190314100340-2693aad1ed75
+github.com/orcaman/concurrent-map
+# github.com/pmezard/go-difflib v1.0.0
+github.com/pmezard/go-difflib/difflib
+# github.com/satori/go.uuid v1.2.0
+github.com/satori/go.uuid
+# github.com/stretchr/testify v1.3.0
+github.com/stretchr/testify/assert
