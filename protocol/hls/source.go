@@ -215,10 +215,10 @@ func (source *Source) parse(p *av.Packet) (int32, bool, error) {
 	var vh av.VideoPacketHeader
 	if p.IsVideo {
 		vh = p.Header.(av.VideoPacketHeader)
-		log.Println("video COde :",vh.CodecID())
-		//if vh.CodecID() != av.VIDEO_H264 {
-		//	return compositionTime, false, ErrNoSupportVideoCodec
-		//}
+		//log.Println("video COde :",vh.CodecID())
+		if vh.CodecID() != av.VIDEO_H264 {
+			return compositionTime, false, ErrNoSupportVideoCodec
+		}
 		compositionTime = vh.CompositionTime()
 		if vh.IsKeyFrame() && vh.IsSeq() {
 			return compositionTime, true, source.tsparser.Parse(p, source.bwriter)
